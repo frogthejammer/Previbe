@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -28,17 +29,21 @@
         <a href="#numbers" class="btn-link">By the Numbers</a>
     </section>
     <main id="main">
-        <div id="main-background">
-            <div id="arrests-and-prosecutions"></div>
-            <div id="attorney-actions"></div>
-            <div id="victim-services"></div>
-            <div id="special-crimes-unit"></div>
-            <div id="numbers"></div>
-            <div id="narcotics"></div>
+        <div></div>
+            <div id="main-background">
+                <div class="chart__container" id="arrests-and-prosecutions"><canvas id="arrests-and-prosecutions-chart"></canvas></div>
+                <div class="chart__container" id="attorney-actions"><canvas id="attorney-actions-chart"></canvas></div>
+                <div class="chart__container" id="victim-services"><canvas id="victim-services-chart"></canvas></div>
+                <div class="chart__container" id="special-crimes-unit"><canvas id="special-crimes-chart"></canvas></div>   
+                <div class="chart__container" id="narcotics"><canvas id="narcotics-chart"></canvas></div>
+            </div>
+                
         </div>
+        <div id="numbers"></div>
     </main>
     <footer id="footer">
        <p id="copyright">&copy 2025 Imperial County District Attorney's Office</p> 
     </footer>
+    <script src="Dashcharts.js"></script>
 </body>
 </html>

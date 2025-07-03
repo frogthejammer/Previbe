@@ -62,7 +62,7 @@
   gap: 2rem;
 }
 
-#main-background > div {
+.chart__container {
   min-height: 25em;
   /* background-color: var(--cardcolor); */
   color: white;
@@ -75,28 +75,28 @@
 
 
 #arrests-and-prosecutions{
-    background-color: red;
+    /* background-color: red; */
 
 }
 
 #attorney-actions{
-    background-color: green;
+    /* background-color: green; */
 }
 
 #victim-services{
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 #special-crimes-unit{
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 #numbers{
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 #narcotics{
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #navbar{
