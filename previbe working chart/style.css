@@ -1,7 +1,7 @@
 
 :root {
     --main-color: hsl(240, 100%, 5%);
-    --navbar-and-footer-color: hsl(240, 100%, 10%); 
+    --navbar-and-footer-color: hsl(240, 100%, 10%);
     --gradcolor-1: hsla(260, 100%, 30%, 0.5);
     --gradcolor-2: hsla(260, 100%, 15%, 0.5);
     --prettywhite: hsla(0, 0%, 100%, 0.727);
@@ -73,7 +73,7 @@
   border: 1px solid #555;
 }
 
-
+/* Test stuff in order to see divs */
 #arrests-and-prosecutions{
     /* background-color: red; */
 
