@@ -29,22 +29,34 @@ function makeChart({elementId, type, title, labels, data, datasetStyles = {} }){
         data: {
             labels: labels, 
             datasets: [{
-                label: title,
+                //label: 'Something',
                 data: data,
                 ...defaultDatasetStyles,
                 ...datasetStyles,
             }],
         },
         options: {
-            indexAxis: 'x',
-            title: {
-                display: true,
-                text: title,
-                fontSize: 25,
+            plugins: {
+                title: {
+                    display: true,
+                    text: title,
+                    font: {
+                        size: 25,
+                    },
+                },
+                legend: {
+                    display: true,
+                    
+                    position: 'top', // or 'bottom', 'left', 'right'
+                    labels:{
+                        text: 'Something else'
+                    },
+                },
             },
-            legend: {},
-            layout: {},
-            plugins: {},
+            layout: {
+                padding: 20,
+            },
+            indexAxis: 'x', // horizontal vs vertical bars
         },
     });
 
@@ -54,10 +66,10 @@ const chartConfigs = [
     {
         elementId: 'arrests-and-prosecutions-chart',
         type: 'bar',
-        title: 'Arrests and prosecutions',
+        title: ' Arrests and prosecutions',
         labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
         data: [617594, 181045, 153060, 106519, 105162, 95072], 
-        datasetStyles: {}, //optional style override, leave empty or delete for defaults.
+        datasetStyles: {label: 'Something',}, //optional style override, leave empty or delete for defaults.
     },
     {
         elementId: 'attorney-actions-chart',
